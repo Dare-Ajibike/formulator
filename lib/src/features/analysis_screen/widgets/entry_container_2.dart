@@ -123,7 +123,7 @@ class EntryContainer2 extends StatelessWidget {
                         fit: BoxFit.scaleDown,
                         alignment: Alignment.center,
                         child: Text(
-                          '+${NumberFormat.decimalPattern().format((entry as EntryWithAmount).amountAdded)}',
+                          '+${NumberFormat.decimalPattern().format((entry as EntryWithAmount).amountAdded ?? 0)}',
                           style: const TextStyle(
                             color: Color(0xFF3E9F33),
                             fontSize: 15,
